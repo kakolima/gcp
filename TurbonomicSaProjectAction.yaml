@@ -1,0 +1,11 @@
+title: "IBM Turbonomic Role: Project Action Execution"
+description: "Grant Turbonomic to execute actions in the GCP Project"
+stage: "GA"
+includedPermissions:
+# Action Execution
+- compute.globalOperations.get
+- compute.instances.setMachineType
+- compute.instances.start
+- compute.instances.stop
+- compute.regionOperations.get
+- compute.zoneOperations.get
