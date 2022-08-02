@@ -1,0 +1,30 @@
+title: "IBM Turbonomic Role: Access - Project"
+description: "Permissoes minimas para o IBM Turbonomic gerenciar Projects"
+stage: "GA"
+includedPermissions:
+# discovery
+- resourcemanager.projects.get
+- compute.regions.list
+- compute.zones.list
+- compute.machineTypes.list
+- compute.machineTypes.get
+- compute.disks.list
+- compute.disks.get
+- compute.diskTypes.list
+- compute.instances.list
+- compute.instances.get
+- compute.instanceGroupManagers.list
+- compute.instanceGroupManagers.get
+# CUD
+- compute.commitments.list
+# Metrics Monitoring
+- logging.views.list
+- logging.views.get
+- monitoring.services.get
+- monitoring.services.list
+- monitoring.timeSeries.list
+# Billing Discovery
+- bigquery.tables.get
+- bigquery.tables.getData
+- bigquery.tables.list
+- bigquery.jobs.create
