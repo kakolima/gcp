@@ -1,0 +1,11 @@
+title: "IBM Turbonomic Role: Access - Organization"
+description: "Requisitos minimos para o IBM Turbonomic para acessar a Organization"
+stage: "GA"
+includedPermissions:
+# Organization Structure View
+- resourcemanager.organizations.get
+- resourcemanager.projects.list
+- resourcemanager.projects.get
+- resourcemanager.folders.list
+- resourcemanager.folders.get
+- billing.resourceAssociations.list
