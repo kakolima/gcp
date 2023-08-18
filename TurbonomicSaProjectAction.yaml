@@ -7,5 +7,6 @@ includedPermissions:
 - compute.instances.setMachineType
 - compute.instances.start
 - compute.instances.stop
+- compute.disks.delete
 - compute.regionOperations.get
 - compute.zoneOperations.get
