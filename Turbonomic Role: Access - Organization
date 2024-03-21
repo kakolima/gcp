@@ -1,0 +1,19 @@
+gcloud iam roles create <ROLE_ID> --organization=<ORGANIZATION_ID> \
+  --title='Turbonomic Role: Access - Organization' \
+  --description='Minimal Required Permissions for \
+  Turbonomic to manage the GCP Organization' \
+  --permissions="resourcemanager.projects.get,compute.regions.list,\
+compute.zones.list,compute.machineTypes.list,\
+compute.machineTypes.get,compute.disks.list,\
+compute.disks.get,compute.diskTypes.list,\
+compute.instances.list,compute.instances.get,\
+compute.instanceGroupManagers.list,\
+compute.instanceGroupManagers.get,\
+compute.instanceGroups.list,\
+compute.commitments.list,logging.views.list,\
+logging.views.get,monitoring.services.get,\
+monitoring.services.list,monitoring.timeSeries.list,\
+serviceusage.services.get,\resourcemanager.organizations.get,\
+resourcemanager.projects.list,resourcemanager.projects.get,\
+resourcemanager.folders.list,resourcemanager.folders.get,\
+billing.resourceAssociations.list" --stage=ALPHA
