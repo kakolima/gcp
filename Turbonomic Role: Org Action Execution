@@ -1,0 +1,8 @@
+gcloud iam roles create <ROLE_ID_ACTION> --organization=<ORGANIZATION_ID> \
+  --title='Turbonomic Role: Org Action Execution' \
+  --description='Grant Turbonomic permissions to \
+  execute actions in the GCP Organization' \
+  --permissions="compute.globalOperations.get,compute.instances.setMachineType,\
+compute.instances.start,compute.instances.stop,\
+compute.disks.delete,compute.regionOperations.get,\
+compute.zoneOperations.get" --stage=ALPHA
