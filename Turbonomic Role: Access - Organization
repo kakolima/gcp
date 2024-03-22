@@ -1,4 +1,4 @@
-gcloud iam roles create <ROLE_ID> --organization=<ORGANIZATION_ID> \
+gcloud iam roles create turbonomic_read --organization=<ORGANIZATION_ID> \
   --title='Turbonomic Role: Access - Organization' \
   --description='Minimal Required Permissions for \
   Turbonomic to manage the GCP Organization' \
