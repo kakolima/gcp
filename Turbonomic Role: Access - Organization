@@ -13,7 +13,8 @@ compute.instanceGroups.list,\
 compute.commitments.list,logging.views.list,\
 logging.views.get,monitoring.services.get,\
 monitoring.services.list,monitoring.timeSeries.list,\
-serviceusage.services.get,\resourcemanager.organizations.get,\
+serviceusage.services.get,resourcemanager.organizations.get,\
 resourcemanager.projects.list,resourcemanager.projects.get,\
 resourcemanager.folders.list,resourcemanager.folders.get,\
+billing.accounts.list,\
 billing.resourceAssociations.list" --stage=ALPHA
