@@ -1,0 +1,7 @@
+gcloud iam roles create turbonomic_billing_read --project=<PROJECT_ID_BILL> \
+  --title='Turbonomic Billing Data Viewer Role' \
+  --description='Minimal Required Permissions for \
+  Turbonomic to view \
+  billed cost and pricing stored in the GCP Project' \
+  --permissions="bigquery.tables.get,bigquery.tables.getData,\
+bigquery.tables.list,bigquery.jobs.create" --stage=ALPHA
